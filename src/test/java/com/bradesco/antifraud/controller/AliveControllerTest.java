@@ -18,6 +18,6 @@ public class AliveControllerTest {
     public void testIndexReturnsOkMessage() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("alive"));
+                .andExpect(content().string("the application is ok"));
     }
 }
